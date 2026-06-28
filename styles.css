@@ -412,6 +412,10 @@ li + li {
   padding: 0.9rem;
 }
 
+.project-content {
+  min-width: 0;
+}
+
 .project-card h3 {
   margin-top: 0.1rem;
 }
@@ -470,16 +474,24 @@ li + li {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .tags span {
-  padding: 0.24rem 0.45rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.28rem 0.5rem;
   border: 1px solid var(--line-strong);
-  border-radius: 8px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.05);
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 800;
+  line-height: 1.15;
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .note-list {
